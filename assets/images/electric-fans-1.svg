@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" role="img" aria-label="Demo illustration of Standing Pedestal Fan">
+ <defs><linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7e9ec"/><stop offset=".5" stop-color="#919ba5"/><stop offset="1" stop-color="#58606b"/></linearGradient>
+ <linearGradient id="black" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#42464c"/><stop offset="1" stop-color="#15171d"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#304b5d"/><stop offset="1" stop-color="#0e1820"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+ <rect width="640" height="460" rx="28" fill="#fcf4f7"/><circle cx="510" cy="92" r="158" fill="#87183f" opacity=".055"/><circle cx="110" cy="365" r="140" fill="#87183f" opacity=".07"/>
+ <ellipse cx="320" cy="385" rx="180" ry="19" fill="#27313a" opacity=".16" filter="url(#shadow)"/>
+ <path d="M318 282 V370" stroke="#798590" stroke-width="20"/><ellipse cx="318" cy="380" rx="93" ry="14" fill="#65717c"/><circle cx="320" cy="217" r="112" fill="#cfd5d9" opacity=".3" stroke="#7f8b94" stroke-width="8"/><path d="M320 217 Q430 142 425 233 Q365 261 320 217" fill="#861b45" opacity=".84" transform="rotate(0 320 217)"/><path d="M320 217 Q430 142 425 233 Q365 261 320 217" fill="#861b45" opacity=".84" transform="rotate(90 320 217)"/><path d="M320 217 Q430 142 425 233 Q365 261 320 217" fill="#861b45" opacity=".84" transform="rotate(180 320 217)"/><path d="M320 217 Q430 142 425 233 Q365 261 320 217" fill="#861b45" opacity=".84" transform="rotate(270 320 217)"/><circle cx="320" cy="217" r="21" fill="#bcc5cb" stroke="#5f707e" stroke-width="8"/><circle cx="320" cy="217" r="106" fill="none" stroke="#697785" stroke-width="4"/>
+ <g font-family="Arial,sans-serif" font-weight="700" letter-spacing="3" font-size="12"><text x="34" y="43" fill="#87183f">NUNIX ADS / DEMO</text><text x="606" y="43" fill="#81858d" text-anchor="end">01</text></g>
+ </svg>

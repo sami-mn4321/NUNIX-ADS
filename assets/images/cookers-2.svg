@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" role="img" aria-label="Demo illustration of Compact 3-Burner Cooker">
+ <defs><linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7e9ec"/><stop offset=".5" stop-color="#919ba5"/><stop offset="1" stop-color="#58606b"/></linearGradient>
+ <linearGradient id="black" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#42464c"/><stop offset="1" stop-color="#15171d"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#304b5d"/><stop offset="1" stop-color="#0e1820"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+ <rect width="640" height="460" rx="28" fill="#f0f5f8"/><circle cx="510" cy="92" r="158" fill="#4a677b" opacity=".055"/><circle cx="110" cy="365" r="140" fill="#4a677b" opacity=".07"/>
+ <ellipse cx="320" cy="385" rx="180" ry="19" fill="#27313a" opacity=".16" filter="url(#shadow)"/>
+ <rect x="206" y="115" width="230" height="264" rx="19" fill="url(#case)" stroke="#5c6670" stroke-width="3"/><path d="M206 144 L436 144" stroke="#272b32" stroke-width="33"/><rect x="221" y="222" width="200" height="126" rx="9" fill="url(#black)"/><rect x="237" y="241" width="167" height="91" rx="6" fill="url(#glass)"/><path d="M242 230 H400" stroke="#e4e7eb" stroke-width="10" stroke-linecap="round"/><g fill="#d7dce2"><circle cx="249" cy="190" r="11"/><circle cx="300" cy="190" r="11"/><circle cx="351" cy="190" r="11"/><circle cx="402" cy="190" r="11"/></g><path d="M214 112 L242 74 H402 L430 112Z" fill="#282b30"/><ellipse cx="280" cy="96" rx="27" ry="9" fill="none" stroke="#b7bcc5" stroke-width="7"/><ellipse cx="362" cy="96" rx="27" ry="9" fill="none" stroke="#b7bcc5" stroke-width="7"/><path d="M227 378 V389 M415 378 V389" stroke="#202329" stroke-width="16"/>
+ <g font-family="Arial,sans-serif" font-weight="700" letter-spacing="3" font-size="12"><text x="34" y="43" fill="#4a677b">NUNIX ADS / DEMO</text><text x="606" y="43" fill="#81858d" text-anchor="end">02</text></g>
+ </svg>

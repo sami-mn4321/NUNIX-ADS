@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout | NUNIX ADS</title>
+  <meta name="description" content="Prepare a NUNIX ADS order request and review your example subtotal.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <script src="js/catalog-data.js" defer></script>
+  <script src="js/cart-store.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</head>
+<body>
+  <header class="header"><nav class="navbar container shop-nav" aria-label="Main navigation">
+    <a class="logo" href="index.html">NUNIX<span>ADS.</span></a>
+    <div class="shop-header-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a></div>
+  </nav></header>
+  <main class="shop-shell">
+    <div class="shop-intro"><p class="eyebrow">NUNIX ADS CHECKOUT</p><h1>Prepare Your Order</h1><p>Review your cart and prepare an order request for the seller.</p><p class="demo-banner"><strong>Not a live payment checkout.</strong> No money will be charged and no order is submitted to a database.</p></div>
+    <div class="cart-layout">
+      <section class="cart-panel">
+        <h2>Customer &amp; Delivery Details</h2>
+        <div class="shop-empty" id="checkout-empty" hidden><h3>Your cart is empty</h3><p>Add products before preparing an order.</p><a href="products.html">Browse products →</a></div>
+        <form class="checkout-form" id="checkout-form">
+          <label>Full name <input name="name" id="customer-name" type="text" autocomplete="name" required maxlength="80" placeholder="Your full name"></label>
+          <label>Phone number <input name="phone" id="customer-phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="07XXXXXXXX or +2547XXXXXXXX"></label>
+          <label>Email (optional) <input name="email" id="customer-email" type="email" autocomplete="email" maxlength="100" placeholder="you@example.com"></label>
+          <div class="checkout-form-columns">
+            <label>County <input name="county" id="customer-county" type="text" required maxlength="60" placeholder="e.g. Nairobi"></label>
+            <label>Town / area <input name="town" id="customer-town" type="text" required maxlength="80" placeholder="Town or delivery area"></label>
+          </div>
+          <label>Delivery instructions (optional) <textarea id="delivery-notes" name="notes" maxlength="300" rows="3" placeholder="Nearby landmark or other delivery instructions"></textarea></label>
+          <fieldset class="checkout-fieldset">
+            <legend>How would you prefer to arrange payment?</legend>
+            <label><input name="payment" type="radio" value="Discuss payment with seller" checked> Discuss payment with seller</label>
+            <label><input name="payment" type="radio" value="Request cash on delivery (subject to seller approval)"> Request cash on delivery (seller must approve)</label>
+            <p>M-Pesa payment cannot be accepted here yet. It requires a secure payment integration.</p>
+          </fieldset>
+          <button class="shop-primary-button" id="prepare-order" type="submit">Prepare Order Request →</button>
+        </form>
+        <div class="checkout-result" id="checkout-result" hidden>
+          <h3>Order request prepared — not submitted</h3>
+          <p>Send this request to the seller for confirmation of price, stock and delivery charges.</p>
+          <pre class="checkout-preview" id="checkout-preview"></pre>
+          <a class="shop-primary-button" id="whatsapp-request" href="#" target="_blank" rel="noopener noreferrer" hidden>Send Request on WhatsApp ↗</a>
+          <button class="shop-primary-button" id="copy-request" type="button">Copy Request</button>
+          <p id="checkout-feedback" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+      <aside class="cart-summary">
+        <h2>Summary</h2>
+        <div id="checkout-lines"></div>
+        <div class="summary-row"><span>Example subtotal</span><strong id="checkout-subtotal">KSh 0</strong></div>
+        <div class="summary-row"><span>Delivery cost</span><span>To be confirmed</span></div>
+        <p class="cart-disclaimer">Prices and specifications are illustrative; this page does not collect payments.</p>
+        <a class="shop-back-link" href="cart.html">← Edit cart</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-bottom shop-footer"><p>© <span id="copyright-year">2026</span> NUNIX ADS.</p><a href="index.html">← Home</a></div></footer>
+</body>
+</html>

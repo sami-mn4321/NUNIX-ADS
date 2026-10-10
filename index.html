@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore cookers, gas stoves, woofers, water dispensers, microwaves, blenders, electric fans, air fryers and shoe racks at NUNIX ADS.">
+  <title>NUNIX ADS | Premium Home Appliances</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Navigation dropdown styles. These are here so your existing style.css needs no changes. -->
+  <style>
+    .category-dropdown { position: relative; }
+    .category-dropdown > summary {
+      list-style: none; cursor: pointer; color: #54545a;
+      font-size: 13px; font-weight: 600;
+    }
+    .category-dropdown > summary::-webkit-details-marker { display: none; }
+    .category-dropdown > summary:hover,
+    .category-dropdown[open] > summary { color: #8b1538; }
+    .category-dropdown-menu {
+      position: absolute; z-index: 1050; top: calc(100% + 19px); left: -12px;
+      display: grid; gap: 2px; min-width: 235px; padding: 10px;
+      border: 1px solid #e9e9ed; border-radius: 16px;
+      background: #fff; box-shadow: 0 16px 40px rgba(0,0,0,.12);
+    }
+    .nav-links .category-dropdown-menu a {
+      display: block; padding: 10px 12px; border-radius: 8px; color: #333;
+      white-space: nowrap;
+    }
+    .nav-links .category-dropdown-menu a:hover {
+      color: #8b1538; background: #f5e9ee;
+    }
+    .category-card { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- MAIN NAVIGATION -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">NUNIX<span>ADS.</span></a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+
+        <details class="category-dropdown">
+          <summary>Categories ▾</summary>
+          <div class="category-dropdown-menu">
+            <a href="products.html?category=cookers">Cookers</a>
+            <a href="products.html?category=gas-stoves">Gas Stoves</a>
+            <a href="products.html?category=woofers">Woofers</a>
+            <a href="products.html?category=water-dispensers">Water Dispensers</a>
+            <a href="products.html?category=microwaves">Microwaves</a>
+            <a href="products.html?category=blenders">Blenders</a>
+            <a href="products.html?category=electric-fans">Electric Fans</a>
+            <a href="products.html?category=air-fryers">Air Fryers</a>
+            <a href="products.html?category=shoe-racks">Shoe Racks</a>
+          </div>
+        </details>
+
+        <a href="products.html">Products</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="products.html" class="nav-shop">Shop Now ↗</a>
+      </div>
+
+      <details class="mobile-menu">
+        <summary aria-label="Open navigation menu">☰</summary>
+        <div class="mobile-links">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="products.html">All Products</a>
+          <a href="#about">About</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO AND THREE.JS SHOWROOM -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO NUNIX ADS</p>
+        <h1>Elevate <span>Everyday Living.</span></h1>
+        <p class="hero-description">
+          Discover premium home appliances designed to make everyday life
+          smarter, simpler and more beautiful.
+        </p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary">Explore Collection →</a>
+          <a href="#categories" class="btn btn-secondary">Discover More</a>
+        </div>
+      </div>
+
+      <!-- All three cards belong to ONE showroom grid. -->
+      <div class="showroom-section">
+        <div class="appliance-showroom">
+          <article class="appliance-card">
+            <div class="appliance-viewer" id="cooker-3d" aria-label="Interactive 3D gas cooker"></div>
+            <div class="appliance-info">
+              <span>01 / KITCHEN ESSENTIALS</span>
+              <h3>Premium Gas Cooker</h3>
+              <p>↻ Drag to explore in 3D</p>
+            </div>
+          </article>
+
+          <article class="appliance-card">
+            <div class="appliance-viewer" id="stove-3d" aria-label="Interactive 3D gas stove"></div>
+            <div class="appliance-info">
+              <span>02 / SMART COOKING</span>
+              <h3>Modern Gas Stove</h3>
+              <p>↻ Drag to explore in 3D</p>
+            </div>
+          </article>
+
+          <article class="appliance-card">
+            <div class="appliance-viewer" id="microwave-3d" aria-label="Interactive 3D microwave"></div>
+            <div class="appliance-info">
+              <span>03 / HOME APPLIANCES</span>
+              <h3>Digital Microwave</h3>
+              <p>↻ Drag to explore in 3D</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <p class="interaction-hint">Drag each appliance to rotate · Scroll over it to zoom</p>
+      <div class="hero-bottom">
+        <span>PREMIUM APPLIANCES</span>
+        <span>DESIGNED FOR MODERN LIVING</span>
+        <span>EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <!-- NINE SHOPPING CATEGORIES -->
+    <section class="categories section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR COLLECTION</p>
+          <h2>Everything Your <span>Home Deserves.</span></h2>
+          <p>Explore premium household appliances and electronics from NUNIX ADS.</p>
+        </div>
+
+        <div class="category-grid">
+          <a href="products.html?category=cookers" class="category-card">
+            <div class="category-icon" aria-hidden="true">🍳</div>
+            <h3>Cookers</h3>
+            <p>Modern cooking solutions</p>
+          </a>
+          <a href="products.html?category=gas-stoves" class="category-card">
+            <div class="category-icon" aria-hidden="true">🔥</div>
+            <h3>Gas Stoves</h3>
+            <p>Reliable everyday cooking</p>
+          </a>
+          <a href="products.html?category=woofers" class="category-card">
+            <div class="category-icon" aria-hidden="true">🔊</div>
+            <h3>Woofers</h3>
+            <p>Powerful sound systems</p>
+          </a>
+          <a href="products.html?category=water-dispensers" class="category-card">
+            <div class="category-icon" aria-hidden="true">💧</div>
+            <h3>Water Dispensers</h3>
+            <p>Comfort and convenience</p>
+          </a>
+          <a href="products.html?category=microwaves" class="category-card">
+            <div class="category-icon" aria-hidden="true">🍲</div>
+            <h3>Microwaves</h3>
+            <p>Smart kitchen appliances</p>
+          </a>
+          <a href="products.html?category=blenders" class="category-card">
+            <div class="category-icon" aria-hidden="true">🥤</div>
+            <h3>Blenders</h3>
+            <p>Modern food preparation</p>
+          </a>
+          <a href="products.html?category=electric-fans" class="category-card">
+            <div class="category-icon" aria-hidden="true">🌀</div>
+            <h3>Electric Fans</h3>
+            <p>Stay cool and comfortable</p>
+          </a>
+          <a href="products.html?category=air-fryers" class="category-card">
+            <div class="category-icon" aria-hidden="true">🍟</div>
+            <h3>Air Fryers</h3>
+            <p>Modern cooking technology</p>
+          </a>
+          <a href="products.html?category=shoe-racks" class="category-card">
+            <div class="category-icon" aria-hidden="true">👟</div>
+            <h3>Shoe Racks</h3>
+            <p>Smart home organization</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCT PREVIEWS -->
+    <section class="featured section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">THE NUNIX COLLECTION</p>
+          <h2>Discover Something <span>Extraordinary.</span></h2>
+          <p>Beautiful appliances for modern homes.</p>
+        </div>
+        <div class="product-grid">
+          <a class="product-card" href="products.html?category=cookers">
+            <div class="product-image"><span aria-hidden="true">🍳</span></div>
+            <div class="product-info">
+              <p>Kitchen Essentials</p>
+              <h3>Premium Gas Cooker</h3>
+              <span class="product-status">Explore Cookers →</span>
+            </div>
+          </a>
+          <a class="product-card" href="products.html?category=woofers">
+            <div class="product-image"><span aria-hidden="true">🔊</span></div>
+            <div class="product-info">
+              <p>Home Entertainment</p>
+              <h3>Powerful Woofer System</h3>
+              <span class="product-status">Explore Woofers →</span>
+            </div>
+          </a>
+          <a class="product-card" href="products.html?category=blenders">
+            <div class="product-image"><span aria-hidden="true">🥤</span></div>
+            <div class="product-info">
+              <p>Kitchen Appliances</p>
+              <h3>Modern Blender</h3>
+              <span class="product-status">Explore Blenders →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about-content">
+        <p class="eyebrow">THE NUNIX EXPERIENCE</p>
+        <h2>A Better Home Starts With <span>Better Choices.</span></h2>
+        <p>
+          Discover appliances and home essentials selected to bring comfort,
+          convenience and style into your everyday life.
+        </p>
+        <a href="#categories" class="btn btn-primary">Discover Our Collection →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <h2>NUNIX<span>ADS.</span></h2>
+          <p>Smart Choices. Better Living.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="products.html">Products</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year">2026</span> NUNIX ADS. All rights reserved.</p>
+        <p>Designed for Modern Living.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js import map. Leave above your custom module. -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/three-scene.js"></script>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

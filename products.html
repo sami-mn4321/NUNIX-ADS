@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the demo NUNIX ADS catalogue: cookers, stoves, woofers, dispensers, microwaves, blenders, fans, fryers, and shoe racks.">
+  <title>All Products | NUNIX ADS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <script src="js/catalog-data.js" defer></script>
+  <script src="js/cart-store.js" defer></script>
+  <script src="js/products.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container shop-nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">NUNIX<span>ADS.</span></a>
+      <div class="shop-header-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="products.html" aria-current="page">All Products</a>
+        <a class="shop-cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shop-shell">
+    <div class="shop-intro">
+      <p class="eyebrow">NUNIX ADS COLLECTION</p>
+      <h1 id="page-title">All Products</h1>
+      <p>Browse our nine appliance categories and add your favourites to the cart.</p>
+      <p class="demo-banner"><strong>:</strong></p>
+    </div>
+
+    <div class="shop-layout">
+      <aside class="shop-sidebar" aria-label="Filter by category">
+        <h2>Shop by category</h2>
+        <nav id="category-list" class="shop-categories" aria-label="Product categories"></nav>
+      </aside>
+
+      <section class="shop-results" aria-labelledby="results-title">
+        <div class="shop-section-heading">
+          <h2 id="results-title">Browse Products</h2>
+        </div>
+        <div class="shop-toolbar">
+          <label class="shop-search-label" for="product-search">Search products
+            <input id="product-search" type="search" placeholder="Search cookers, blenders, stoves..." autocomplete="off">
+          </label>
+          <label class="shop-sort-label" for="product-sort">Sort by
+            <select id="product-sort">
+              <option value="default">Featured order</option>
+              <option value="az">Name: A to Z</option>
+              <option value="za">Name: Z to A</option>
+              <option value="low">Demo price: Low to High</option>
+              <option value="high">Demo price: High to Low</option>
+            </select>
+          </label>
+        </div>
+        <p class="shop-count" id="results-count" aria-live="polite"></p>
+        <div class="shop-grid" id="product-grid"></div>
+        <div class="shop-empty" id="empty-state" hidden>
+          <h3>No matching products</h3>
+          <p>Try another search or select another category.</p>
+          <a href="products.html">View all products →</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="product-dialog" class="shop-dialog" aria-labelledby="dialog-title">
+    <button class="shop-dialog-close" type="button" id="close-dialog" aria-label="Close product details">×</button>
+    <button type="button" class="shop-primary-button shop-dialog-add" id="dialog-add">Add to Cart</button>
+  </dialog>
+  <div class="shop-toast" id="shop-toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="container footer-bottom shop-footer">
+      <p>© <span id="copyright-year">2026</span> NUNIX ADS. All rights reserved.</p>
+      <a href="index.html">← Return to homepage</a>
+    </div>
+  </footer>
+</body>
+</html>

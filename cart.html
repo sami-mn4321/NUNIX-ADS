@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Cart | NUNIX ADS</title>
+  <meta name="description" content="Review the items in your NUNIX ADS shopping cart.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <script src="js/catalog-data.js" defer></script>
+  <script src="js/cart-store.js" defer></script>
+  <script src="js/cart-page.js" defer></script>
+</head>
+<body>
+  <header class="header"><nav class="navbar container shop-nav" aria-label="Main navigation">
+    <a class="logo" href="index.html">NUNIX<span>ADS.</span></a>
+    <div class="shop-header-links"><a href="index.html">Home</a><a href="products.html">All Products</a><a href="cart.html" aria-current="page">Cart <span class="cart-count" data-cart-count>0</span></a></div>
+  </nav></header>
+  <main class="shop-shell">
+    <div class="shop-intro"><p class="eyebrow">YOUR BASKET</p><h1>Shopping Cart</h1><p>Review quantities before proceeding to checkout.</p><p class="demo-banner"><strong>Demo only:</strong> The displayed prices are examples, not confirmed store prices.</p></div>
+    <div class="cart-layout">
+      <section class="cart-panel" aria-labelledby="cart-heading">
+        <h2 id="cart-heading">Your Items <span class="cart-count" data-cart-count>0</span></h2>
+        <div id="cart-items"></div>
+        <div class="shop-empty" id="cart-empty" hidden><h3>Your cart is empty</h3><p>Explore the catalogue and add some appliances.</p><a href="products.html">Browse products →</a></div>
+      </section>
+      <aside class="cart-summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Order Summary</h2>
+        <div class="summary-row"><span>Items</span><strong id="summary-count">0</strong></div>
+        <div class="summary-row"><span>Example subtotal</span><strong id="summary-subtotal">KSh 0</strong></div>
+        <div class="summary-row"><span>Delivery</span><span>To be confirmed</span></div>
+        <p class="cart-disclaimer">Final prices, stock and delivery charges must be confirmed by the seller.</p>
+        <a class="shop-primary-button checkout-link" id="checkout-link" href="checkout.html">Proceed to Checkout →</a>
+        <a class="shop-back-link" href="products.html">← Continue shopping</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-bottom shop-footer"><p>© <span id="copyright-year">2026</span> NUNIX ADS.</p><a href="index.html">← Home</a></div></footer>
+</body>
+</html>
